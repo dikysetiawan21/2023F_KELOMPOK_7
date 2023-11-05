@@ -58,3 +58,49 @@ for key, value in size_pizza.items(): #Melakukan perulangan dari semua list data
     print(f"{key}: {value}") #Menampilkan pilihan size pizza yang berada didalam dictionary
 
 #Memasukkan input size pizza berupa integer
+print('--------------------------------------------------------')
+input_size = int(input('Silahkan Memilih Size Pizaa yang Anda Inginkan! (1-3): '))
+print('--------------------------------------------------------')
+#Memasukkan input Y/N untuk menambah extra cheese
+input_extra_cheese = input('Apakah Anda Ingin Menambahkan Extra Cheese? (Y/N) ')
+print('---------------------------------------------------')
+
+#Deklarasi harga awal yang berisi 0
+harga = 0
+
+#Menghitung harga crust nomor 1 menggunakan if elif dan else
+if input_crust == 1: #inputan pan crust
+    total_harga = 43637 # harga pan crust
+    if input_size == 1: 
+        total_harga += 0 #harga size personal
+    elif input_size == 2:
+        total_harga += 57273 #harga size regular
+    else:
+        total_harga += 89091 #harga size large
+
+#Menghitung harga crust nomor 2 menggunakan if elif dan else
+elif input_crust == 2: #inputan stuffedCrust Cheese
+    total_harga = 55455 #harga stuffedCrust Cheese
+    if input_size == 1:
+        total_harga += 0 #harga size personal
+    elif input_size == 2:
+        total_harga += 65455 #harga size regular
+    else:
+        total_harga += 104545 #harga size large
+
+#Menghitung harga crust nomor 3 menggunakan if elif dan else
+elif input_crust == 3: #inputan StuffedCrust Sausage
+    total_harga = 52728 #harga StuffedCrust Sausage
+    if input_size == 1:
+        total_harga += 0 #harga size personal
+    elif input_size == 2:
+        total_harga += 64545 #harga size regular
+    else:
+        total_harga += 102727 #harga size large
+
+#Menghitung harga crust nomor 4 menggunakan if elif dan else
+elif input_crust == 4: #inputan Cheesy Bites
+    total_harga = 57273 #harga Cheesy Bites
+    if input_size == 1:
+        total_harga += 0 #harga size personal
+    elif input_size == 2:
