@@ -104,3 +104,48 @@ elif input_crust == 4: #inputan Cheesy Bites
     if input_size == 1:
         total_harga += 0 #harga size personal
     elif input_size == 2:
+total_harga += 66364 #harga size regular
+    else:
+        total_harga += 107273 #harga size large
+
+#Menghitung harga crust nomor 5 menggunakan if elif dan else
+else:
+    total_harga = 55455 #inputan crown crust
+    if input_size == 1: #harga crown crust
+        total_harga += 0 #harga size personal
+    elif input_size == 2:
+        total_harga += 65455 #harga size regular
+    else:
+        total_harga += 104545 #harga size large
+
+#Menghitung harga jika menambahkan pizza
+if input_extra_cheese.upper() == 'Y':
+    extrcheese = "Dengan Tambahan Extra Cheese"
+    if input_size == 1:
+        total_harga += 13636
+    elif input_size == 2:
+        total_harga += 16364
+    else:
+        total_harga += 19091
+else:
+    extrcheese = "Tidak Dengan Tambahan Extra Cheese"
+
+#Deklarasi variabel baru untuk menampikan toping yang dipilih
+toping = toping_pizza[input_toping]
+#Deklarasi variabel baru untuk menampikan crust yang dipilih
+crust = crust_pizza[input_crust]
+#Deklarasi variabel baru untuk menampikan size yang dipilih
+size = size_pizza[input_size]
+
+#Menampilkan total harga dan struk pembelian
+print('\n=============================================')
+print('Terima Kasih Sudah Membeli Pizza Di Pizza Hut')
+print('=============================================')
+print("----------------Pesanan Anda----------------")
+print(f"1. Topping yang dipilih: {toping}") #Menampilkan toping sesuai yang telah dipilih
+print(f"2. Crust yang dipilih: {crust}") #Menampilkan crust sesuai yang telah dipilih
+print(f"3. Size yang dipilih: {size}") #Menampilkan size sesuai yang telah dipilih
+print(f"4. {extrcheese}") #Menampilkan jika iya dan jika tidak menambah extra cheese
+print("--------------------------------------------")
+print(f"Total harga: Rp. {total_harga:,.2f}") #Menampilkan total keseluruhan harga
+print('=============================================')
