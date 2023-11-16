@@ -1,1 +1,20 @@
-
+def gerak() :
+    move()
+    turn_left()
+    move()
+    turn_left()
+    turn_left()
+    turn_left()
+    move()
+    turn_left()
+    turn_left()
+    turn_left()
+    move()
+    turn_left()
+    
+gerak()
+gerak()
+gerak()
+gerak()
+gerak()
+gerak()
