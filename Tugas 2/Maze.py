@@ -7,7 +7,7 @@ def maze():
     if not wall_in_front():
         move()
         if at_goal():
-            done
+            done()
         elif not wall_on_right():
             turn_right()
     else:
